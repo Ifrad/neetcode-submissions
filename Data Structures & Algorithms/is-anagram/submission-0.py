@@ -1,0 +1,17 @@
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        dic1 = {}
+        dic2 = {}
+        for c in s:
+            dic1[c] = dic1.get(c,0)+1
+        for n in t:
+            dic2[n] = dic2.get(n,0)+1
+        return dic1 == dic2
+        
+        
+     
+       
+
+
+
+        
